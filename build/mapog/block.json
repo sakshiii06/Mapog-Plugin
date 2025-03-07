@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/mapog",
+  "version": "0.1.0",
+  "title": "Mapog",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Displays user-created maps from Mapog.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "maps": {
+      "type": "array",
+      "default": []
+    },
+    "selectedMap": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "mapog",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "script": "file:./frontend.js"
+}
